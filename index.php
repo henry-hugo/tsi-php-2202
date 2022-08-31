@@ -56,12 +56,6 @@ switch ($i) {
         break;
     default:
     echo "numero invalido";      
-}                    
-    
-    
-    
-    
-    
-                    /* the printed value would be
+}                    /* the printed value would be
                    $i before the increment
                    (post-increment) */
