@@ -1,4 +1,5 @@
 <?php
+/*
     $nome = 'numero da linha';   #variavel
    echo "ola $nome"; #usar ("") para chamar variavel
 // apenas se tiver html junto com o php ("?"+">")
@@ -56,6 +57,11 @@ switch ($i) {
         break;
     default:
     echo "numero invalido";      
-}                    /* the printed value would be
+}                     the printed value would be
                    $i before the increment
                    (post-increment) */
+
+///////vetor
+
+
+
