@@ -1,7 +1,7 @@
 <?php
-$dsn = 'mysql:dbname=senac; host=localhost;port=3306';
-$user ='bono';
-$pass = '12345678';
+$dsn = 'mysql:dbname=database2; host=localhost;port=3310';
+$user ='root';
+$pass = 'MyKeyword';
 
 $pdo = new PDO($dsn, $user, $pass);
 
