@@ -15,18 +15,17 @@
         </div>
 
         <div>
-            <label class="form-label" for="turno">Turno</label>
-            <select class="form-label" name="periodo" id="periodo">
-                <option value="option">option</option>
-                <option value="matutino">matutino</option>
-                <option value="vespertino">vespertino</option>
-                <option value="noturno">noturno</option>
-            </select>
+            <label class="form-label" for="email">email</label>
+            <input for="email" name="email"></input>
+        </div>
+        <div>
+            <label class="form-label" for="senha">senha</label>
+            <input for="senha" name="senha"></input>
         </div>
 
         <div>
-            <label class="form-label" for="inicio">inicio</label>
-            <input class="form-label" type="date" name="inicio" id="inicio">
+            <label class="form-label" for="inicio">CPF</label>
+            <input class="form-label" type="number" name="cpf" id="cpf">
         </div>
 
         <div>
