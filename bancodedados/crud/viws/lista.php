@@ -29,6 +29,7 @@
         <a  href="formIncluir.php"><button class="btn">voltar</button></a>
     </div>
     <div class="container">
+    <form action="" method="post">
     <table class="table table-dark table-striped">
         <tr>
             <th scope="col">ID</th>
@@ -39,6 +40,8 @@
             <th scope="col">editar</th> 
             <th scope="col">atualizar</th>          
         </tr>
+
+        
         
             <?php
 
@@ -50,6 +53,17 @@
                 }else{
                     echo '<div class="alert alert-primary" role="alert">
                           gravar com sucesso
+                        </div>';
+                }
+            }
+            if(isset ($atualizar)){
+                if(!$atualizar){
+                echo '<div class="alert alert-primary" role="alert">
+                            erro ao atualizar
+                        </div>';
+                }else{
+                    echo '<div class="alert alert-primary" role="alert">
+                        atualizar com sucesso
                         </div>';
                 }
             }
@@ -86,14 +100,13 @@
 						
 					</td>
                     <td>
-						
-						<a href='atualizar/atualizar.php'>Atualizar</a>
-						 
-						
+
+					    <button class='btn btn-danger' formaction='formularioAtualizar.php' value='{$aluno['USUARIO_ID']}' name='id'> Atualizar </button>	
+												
 					</td>
                     <td>
-						
-                    <a href='atualizar/deletar.php'>Deletar</a>
+
+						<button class='btn btn-danger' formaction='formularioDeletar.php' value='{$aluno['USUARIO_ID']}' name='id'> Deletar </button>	
 						
 					</td>
                     </tbody>
@@ -102,7 +115,7 @@
             }
             
             ?>
-        
+        </form>
     </table>    
     
 </body>
