@@ -24,6 +24,13 @@
 </head>
 </head>
 <body>
+    <div style="text-align:center; color:red; background-color:#000;">
+        <h1>    
+            <?php echo "Bem Vindo  " . $_SESSION['nome'] . "!!";   ?>
+            <a style="float:right; font-size:18px;"  href="logout.php">Sair</a>
+        </h1>
+    </div>
+    
     
     <div>
         <a  href="formIncluir.php"><button class="btn">voltar</button></a>

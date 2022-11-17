@@ -4,8 +4,9 @@ require_once "../conexao.php";
 $id =$_POST['id'];
 $nome =$_POST['nome'];
 $email =$_POST['email'];
-$senha=$_POST['senha'];
 $cpf=$_POST['cpf'];
+
+$senha = password_hash($senha=$_POST['senha'],PASSWORD_DEFAULT);
 
 //var_dump($_POST);
 

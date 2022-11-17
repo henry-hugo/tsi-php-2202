@@ -19,8 +19,14 @@ $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
 
 $autenticou = false;
 
-if(isset($usuario[' USUARIO_NOME'])){
+if(isset($usuario['USUARIO_NOME'])){
+    if(password_verify($password,$usuario['USUARIO_SENHA'])){
 
+        session_start();
+        $_SESSION['nome'] = $usuario['USUARIO_NOME'];
+        header('Location:../crud/index.php');
+        exit();
+    }
 }
 
 include 'index.php';

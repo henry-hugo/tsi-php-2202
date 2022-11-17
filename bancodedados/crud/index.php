@@ -1,5 +1,6 @@
-<?php
-    require_once "../conexao.php";
+<?php 
+require_once "autent.php";
+require_once "../conexao.php";
 
     $stmt = $pdo->query("SELECT USUARIO_ID, USUARIO_NOME, USUARIO_EMAIL, USUARIO_SENHA, USUARIO_CPF FROM USUARIO  ");
     $alunos = [];
